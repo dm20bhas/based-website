@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Do you troll?</title>
+	<script>
+		let isTrolling = false;
+		var audio = new Audio('trollsound.ogg');
+		audio.loop = true;
+
+		function startTrolling() {
+			if (isTrolling == false) {
+				document.body.style.background = "url(\"troll.gif\")";
+				document.getElementById("button").innerHTML = "Stop trolling";
+			
+				window.alert("You just got coconut malled. Share this with all your friends to coconut mall them!");
+				audio.play();
+				isTrolling = true;
+			} else {
+				document.body.style.background = "url(\"image.jpg\")";
+				document.getElementById("button").innerHTML = "If you troll click here";
+				audio.pause();
+				isTrolling = false;
+			}
+		}
+	</script>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:xd_Signature msdt:dt="string"></mso:xd_Signature>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Tim Little</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">24900.0000000000</mso:Order>
+<mso:ComplianceAssetId msdt:dt="string"></mso:ComplianceAssetId>
+<mso:TemplateUrl msdt:dt="string"></mso:TemplateUrl>
+<mso:ReferenceId msdt:dt="string"></mso:ReferenceId>
+<mso:xd_ProgID msdt:dt="string"></mso:xd_ProgID>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Tim Little</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x0101005D1A3830CBE2F24E9BF67EF217EEFDE3</mso:ContentTypeId>
+<mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
+<mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head> 
+
+<body class="body"> 
+	<div id="container">  	  
+   
+		<div id="mainContent">
+			<h1 id="heading"><button id="button" type="button" onclick="startTrolling()">If you troll click here</button></h1>     
+		</div> <!--end of mainContent div tag--> 
+		<!--<img id="ghost" src="troll.gif">-->
+	</div> <!--end of Container div tag--> 
+  
+</body>
+
+</html>

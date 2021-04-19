@@ -1,0 +1,32 @@
+#heading {
+	margin: 0 auto;
+	width: 50%;
+	float: center;
+	background-image: url("troll.gif");
+	padding: 5px;
+	border: 5px solid lime;
+}
+
+#ghost {
+	position: relative;
+	animation-name: example;
+	animation-duration: 4s;
+}
+
+body {
+	background-image: url("image.jpg");
+	font-family: verdana;
+}
+
+h1 {
+	text-align: center;
+	color: lime;
+}
+
+@keyframes example {
+	0% {opacity: 0.0; left:10%; top:10%;}
+	20% {opacity: 1.0; left:90%; top:10%;}
+	40% {opacity: 0.0; left:90%; top:90%;}
+	60% {opacity: 1.0; left:10%; top:90%;}
+	80% {opacity: 0.0; left:10%; top:10%;}
+}
